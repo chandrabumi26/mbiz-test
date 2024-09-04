@@ -54,20 +54,24 @@ function CardBanner() {
     },
   ];
   return (
-    <div className="cardbanner">
-      <div className="cardbanner__category-container">
+    <div className={`cardbanner${isHovered ? "--hover" : ""}`}>
+      <div
+        className={`cardbanner__category-container${
+          isHovered ? "--hover" : ""
+        }`}
+      >
         <div className="cardbanner__category-header">
           <span className="cardbanner__category-label--normal">Kategori</span>
           <span className="cardbanner__category-label--blue">Lihat Semua</span>
         </div>
-        <div className="cardbanner__list-container">
+        <div
+          className="cardbanner__list-container"
+          onMouseEnter={handleMouseHover}
+          onMouseLeave={handleMouseLeave}
+        >
           {categories.map((e, index) => (
             <div className="cardbanner__list-items" key={index}>
-              <div
-                onMouseEnter={handleMouseHover}
-                onMouseLeave={handleMouseLeave}
-                className="d-flex w-100 justify-content-between"
-              >
+              <div className="d-flex w-100 justify-content-between">
                 <span>{e.title}</span>
                 <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
               </div>
@@ -76,9 +80,13 @@ function CardBanner() {
           ))}
         </div>
       </div>
-      <div className="cardbanner__carousel-container">
-        <CarouselBanner></CarouselBanner>
-      </div>
+      {!isHovered ? (
+        <div className="cardbanner__carousel-container">
+          <CarouselBanner></CarouselBanner>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 }

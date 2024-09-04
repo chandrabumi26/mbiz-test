@@ -35,13 +35,29 @@
   }
 }
 
-.slick-dots {
-  bottom: 10px !important;
-}
-
 .carousel-image {
   background-color: red;
   img {
     width: 100%;
+  }
+}
+
+.slick-dots {
+  bottom: 10px !important;
+}
+
+.slick-dots {
+  li {
+    button::before {
+      font-weight: normal;
+      color: gray;
+    }
+
+    &.slick-active {
+      button::before {
+        font-weight: bold;
+        color: black;
+      }
+    }
   }
 }

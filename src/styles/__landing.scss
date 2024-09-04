@@ -4,15 +4,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: space(xxl);
 }
 
 .cardbanner {
   display: flex;
   width: 1200px;
+  min-height: 525px;
+  margin-top: space(xxl);
   box-shadow: rgba(0, 0, 0, 0.25) 3px 3px 8px;
   overflow: hidden;
   border-radius: space(lg);
+
+  &--hover {
+    @extend .cardbanner;
+    background: 0% 0% no-repeat padding-box padding-box rgb(237, 237, 237) !important;
+  }
 
   &__carousel-container {
     width: 75%;
@@ -23,6 +29,11 @@
   &__category-container {
     margin: space(md);
     width: 25%;
+    max-width: 25%;
+    &--hover {
+      @extend .cardbanner__category-container;
+      background: 0% 0% no-repeat padding-box padding-box rgb(237, 237, 237) !important;
+    }
   }
 
   &__category-header {
@@ -66,13 +77,53 @@
     padding: space(sm) space(sm) space(xs);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 0.5;
+    color: color(dark, 500);
 
     &:hover {
       border-radius: space(sm);
-      background: 0% 0% no-repeat padding-box padding-box rgb(237, 237, 237);
+      background: white;
+      color: color(primary, 500);
     }
   }
+}
+
+.newproduct {
+  background-color: rgb(237, 237, 237);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: space(xxl);
+
+  &__content-title {
+    color: color(dark, 500);
+    font-size: space(xl);
+    font-weight: 500;
+    margin-bottom: space(md);
+  }
+
+  &__content {
+    display: flex;
+    max-width: 1200px;
+    flex-direction: column;
+    padding: space(lg) 0 space(lg);
+  }
+
+  &__carousel {
+    margin-top: space(xxl);
+  }
+}
+
+.block-body {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow-y: hidden;
+  z-index: 10;
 }

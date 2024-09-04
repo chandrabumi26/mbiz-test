@@ -1,0 +1,57 @@
+@import "./_variables";
+
+.header {
+  &__panel {
+    background-color: color(primary, 500);
+    height: space(xl);
+    padding: space(xxs);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__panel-container {
+    width: 1250px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__panel-section {
+    gap: space(sm);
+    display: flex;
+    align-items: center;
+    span {
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 550;
+    }
+  }
+
+  &__main {
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 8px;
+    padding: space(lg) space(xs);
+  }
+
+  &__main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: space(md);
+  }
+
+  &__cart {
+    border: 0;
+    color: color(dark, 500);
+    background-color: white;
+    font-size: space(xl);
+    cursor: pointer;
+
+    &:hover {
+      color: color(primary, 700);
+    }
+  }
+}

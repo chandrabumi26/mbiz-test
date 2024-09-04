@@ -1,0 +1,47 @@
+@import "./_variables";
+
+.arrow-button {
+  position: absolute;
+  display: block;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.87);
+  border-radius: 50%;
+  color: white;
+  top: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  opacity: 0.5;
+  cursor: pointer;
+  svg {
+    z-index: 1001;
+  }
+
+  &--prev {
+    @extend .arrow-button;
+    left: 10px;
+  }
+
+  &--next {
+    @extend .arrow-button;
+    right: 10px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.slick-dots {
+  bottom: 10px !important;
+}
+
+.carousel-image {
+  background-color: red;
+  img {
+    width: 100%;
+  }
+}

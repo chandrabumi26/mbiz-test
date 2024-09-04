@@ -1,0 +1,38 @@
+@import "./_variables";
+
+.searchbar {
+  background-color: rgb(249, 249, 249);
+  border: 1px solid rgb(225, 225, 225);
+  width: 1000px;
+  border-radius: space(sm);
+  height: 100%;
+  display: flex;
+
+  &__input {
+    border-top-left-radius: space(sm);
+    border-bottom-left-radius: space(sm);
+    color: rgb(151, 151, 151);
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 0 space(md);
+
+    &:focus {
+      outline: 2px solid rgb(225, 225, 225);
+    }
+  }
+
+  &__button-search {
+    cursor: pointer;
+    border-top-right-radius: space(sm);
+    border-bottom-right-radius: space(sm);
+    border: 0;
+    color: white;
+    background-color: color(primary, 700);
+    padding: space(md) space(xl);
+
+    &:hover {
+      background-color: color(primary, 500);
+    }
+  }
+}

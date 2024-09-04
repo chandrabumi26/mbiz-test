@@ -1,0 +1,24 @@
+$colors: (
+  primary-500: rgb(0, 174, 239),
+  primary-700: rgb(64, 200, 244),
+  dark-500: #212121,
+);
+
+$space: (
+  xxs: 2px,
+  xs: 4px,
+  sm: 8px,
+  md: 12px,
+  lg: 16px,
+  xl: 24px,
+  xxl: 32px,
+  xxxl: 40px,
+);
+
+@function space($name) {
+  @return map-get($space, $name);
+}
+
+@function color($name, $shade) {
+  @return map-get($colors, $name + "-" + $shade);
+}

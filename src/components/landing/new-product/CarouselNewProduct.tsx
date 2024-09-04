@@ -70,7 +70,7 @@ function CenterMode() {
     {
       title: "ThinkBook 14 G4 ABA Ryzen 7-58",
       img: "https://www.mbizmarket.co.id/_next/image?url=https%3A%2F%2Fimg.mbizmarket.co.id%2Fproducts%2Fthumbs%2F180x180%2F2024%2F02%2F01%2Fe59a4a0a23fec608f4f523c2c9e7fcc9.jpg&w=1920&q=75",
-      isVerified: false,
+      isVerified: true,
       vendor: "Think.ID",
       taxtStatus: "PKP",
       location: "Jawa Timur",

@@ -3,6 +3,7 @@ import "@/styles/__landing.scss";
 import CarouselItems from "@/components/landing/display-items/CarouselItems";
 import Collaboration from "./display-items/Collaboration";
 import Features from "./display-items/Features";
+import Media from "./display-items/Media";
 
 const DisplayItems = () => {
   const items = [
@@ -192,6 +193,7 @@ const DisplayItems = () => {
         ))}
         <Collaboration></Collaboration>
         <Features></Features>
+        <Media></Media>
       </div>
     </div>
   );

@@ -56,10 +56,14 @@
   padding: space(md);
   border-radius: space(md);
   border: 1px solid rgb(225, 225, 225);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   overflow: hidden;
   gap: space(sm);
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid color(primary, 700);
+  }
 }
 
 .carousel-card-title {

@@ -4,6 +4,7 @@ import CarouselItems from "@/components/landing/display-items/CarouselItems";
 import Collaboration from "./display-items/Collaboration";
 import Features from "./display-items/Features";
 import Media from "./display-items/Media";
+import About from "./display-items/About";
 
 const DisplayItems = () => {
   const items = [
@@ -194,6 +195,7 @@ const DisplayItems = () => {
         <Collaboration></Collaboration>
         <Features></Features>
         <Media></Media>
+        <About></About>
       </div>
     </div>
   );

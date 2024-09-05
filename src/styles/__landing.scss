@@ -360,6 +360,22 @@
       color: rgba(0, 0, 0, 0.54);
     }
   }
+
+  &__about-description {
+    font-size: 12px;
+    font-size: 550;
+
+    &--grey {
+      @extend .displayitems__about-description;
+      color: color(dark, 500);
+    }
+
+    &--blue {
+      @extend .displayitems__about-description;
+      color: color(primary, 500);
+      cursor: pointer;
+    }
+  }
 }
 
 .block-body {

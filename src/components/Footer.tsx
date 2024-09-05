@@ -34,13 +34,13 @@ const Footer = () => {
           </div>
           <div className="footer__group">
             <span className="footer__title">Promo & Info Terkini</span>
-            <div className="searchbar">
+            <div className="searchbarfooter">
               <input
-                className="searchbar__input"
+                className="searchbarfooter__input"
                 type="text"
                 placeholder="Search Poduk / Toko"
               />
-              <button className="searchbar__button-search">
+              <button className="searchbarfooter__button-search">
                 <FontAwesomeIcon icon={faPaperPlane}></FontAwesomeIcon>
               </button>
             </div>

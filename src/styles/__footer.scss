@@ -127,7 +127,7 @@
   }
 }
 
-.searchbar {
+.searchbarfooter {
   background-color: rgb(249, 249, 249);
   border: 1px solid rgb(225, 225, 225);
   width: 100%;
@@ -154,6 +154,7 @@
     cursor: pointer;
     border-top-right-radius: space(sm);
     border-bottom-right-radius: space(sm);
+    width: 20%;
     border: 0;
     color: white;
     background-color: color(primary, 700);

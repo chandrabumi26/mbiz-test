@@ -378,6 +378,43 @@
   }
 }
 
+.floatingbutton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 200px;
+  height: 40px;
+  border-radius: space(xl);
+  border: 0;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  color: white;
+  background-color: color(primary, 700);
+  font-size: 14px;
+  font-weight: 550;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: space(md);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  opacity: 0;
+  transform: translateY(100%);
+
+  &.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &.hide {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  &:hover {
+    background-color: color(primary, 500);
+  }
+}
+
 .block-body {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;

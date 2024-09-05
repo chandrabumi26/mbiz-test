@@ -8,7 +8,7 @@ function CardBanner() {
   const [isHovered, setHovered] = useState(false);
 
   const handleMouseHover = () => {
-    setHovered(true);
+    setHovered(false);
   };
 
   const handleMouseLeave = () => {

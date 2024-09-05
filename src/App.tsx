@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Landing from "./components/Landing";
 import Footer from "./components/Footer";
 import CopyRight from "./components/Copyright";
+import FloatingButton from "./components/FloatingButton";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Landing></Landing>
       <Footer></Footer>
       <CopyRight></CopyRight>
+      <FloatingButton></FloatingButton>
     </div>
   );
 }
